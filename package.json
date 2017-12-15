@@ -1,0 +1,28 @@
+{
+  "name": "celular-plano",
+  "version": "1.0.0",
+  "description": "cell phone plan system \u001b[D\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobsenanaizabel/celular-plano.git"
+  },
+  "keywords": [
+    "AngularJs",
+    "npm5",
+    "grunt",
+    "bootstrap",
+    "css",
+    "HMTL5",
+    "node"
+  ],
+  "author": "Ana Izabel Jacobsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobsenanaizabel/celular-plano/issues"
+  },
+  "homepage": "https://github.com/jacobsenanaizabel/celular-plano#readme"
+}
