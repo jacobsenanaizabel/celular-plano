@@ -1,0 +1,47 @@
+.card{
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.card-block:hover{
+    border-radius: 25px;
+    background-color: #0064ab;
+    opacity: 0.8;   
+}
+.card-plan{
+    margin:auto;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+#card-inte a{
+    background-image: url(../img/svg/text-lines-5.svg);
+    text-align: center;
+    display: block;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-left: 11%;
+}
+
+#card-sign a{
+    background-image: url(../img/svg/wifi-signal.svg);
+    text-align: center;
+    display: block;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-left: 11%;
+}
+#card-sign-4 a{
+    background-image: url(../img/svg/wifi-signal-4.svg);
+    text-align: center;
+    display: block;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-left: 11%;
+}

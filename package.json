@@ -31,6 +31,7 @@
     "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
-    "angular": "^1.6.7"
+    "angular": "^1.6.7",
+    "bootstrap": "^4.0.0-beta.2"
   }
 }
