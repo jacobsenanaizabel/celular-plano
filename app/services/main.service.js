@@ -1,4 +1,4 @@
-app.service('MainService', function($http,$q, $log) {
+app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
     
     var self = this;
     var defer = $q.defer(); 
@@ -14,20 +14,25 @@ app.service('MainService', function($http,$q, $log) {
         return $http
         .get(endpoints.platforms)
         .then(function(response) {
-            return response.data;
+            _.each(response.data.plataformas, function(platform){
+                platform.descricao = platform.descricao.replace("|"," ").toLowerCase();
+                platform.nome = platform.nome.toLowerCase();
+            })
+            return new PlatformModel(response.data);
         }, function(e) {
             console.log(e, "can not get data.");
         });
     };
-    
-    self.getPlain = function (platformChoose) {
 
+    self.getPlain = function (platformChoose) {
+        
         switch(platformChoose){
+
             case 'computador':
                 return $http
                 .get(endpoints.computer)
                 .then(function(response) {
-                    return response.data;
+                    return new PlanModel(response.data);
                 }, function(e) {
                     console.log(e, "can not get data.");
                 });
@@ -35,7 +40,7 @@ app.service('MainService', function($http,$q, $log) {
                 return $http
                 .get(endpoints.tablet)
                 .then(function(response) {
-                    return response.data;
+                    return new PlanModel(response.data);
                 }, function(e) {
                     console.log(e, "can not get data.");
                 });
@@ -43,7 +48,7 @@ app.service('MainService', function($http,$q, $log) {
                 return $http
                 .get(endpoints.wifi)
                 .then(function(response) {
-                    return response.data;
+                    return new PlanModel(response.data);
                 }, function(e) {
                     console.log(e, "can not get data.");
                 });

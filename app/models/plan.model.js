@@ -1,11 +1,11 @@
-app.factory('PlainmModel', function() {
-  var PlainModel;
-  PlainModel = function(_data){
+app.factory('PlanModel', function(PlanListModel) {
+  var PlanModel;
+  PlanModel = function(_data){
     var data = _data || {};
-    this.sku = data.sku || null;
-    this.nome = data.nome || null;
-    this.descricao = data.descricao || null;
+    this.plans = data.planos ? _.map(data.planos, function(plano){
+      return new PlanListModel(plano);
+    }) : [];
   }
 
-  return PlainModel;
+  return PlanModel;
 });

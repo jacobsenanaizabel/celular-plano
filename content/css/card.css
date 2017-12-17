@@ -1,10 +1,9 @@
-.card{
-    background-color: transparent !important;
-    border: transparent !important;
+#home-card{
+    background-color: transparent;
+    border: transparent;
 }
 
 .card-block:hover{
-    border-radius: 25px;
     background-color: #0064ab;
     opacity: 0.8;  
     -moz-transform: scale(1.1);
@@ -13,6 +12,7 @@
 }
 
 .card-block{
+    border-radius: 25px;
     -webkit-transition: 1s all ease; /* Chrome and Safira */
     -moz-transition: 1s all ease; /* Firefox */
     -o-transition: 1s all ease; /* Opera */
@@ -35,6 +35,8 @@
     background-repeat: no-repeat;
     height: 150px;
     margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .computador{
@@ -43,6 +45,8 @@
     background-repeat: no-repeat;
     height: 150px;
     margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .wi-fi{
     background-image: url(../img/svg/wifi-signal-4.svg);
@@ -50,4 +54,6 @@
     background-repeat: no-repeat;
     height: 150px;
     margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }

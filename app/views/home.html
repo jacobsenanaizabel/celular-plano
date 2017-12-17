@@ -1,10 +1,11 @@
 <main role="main" data-ng-init="init()">
     <div class="content">
-        <h2 class="display-3 d-flex justify-content-center">Mobile Wooza</h2>
-        <p class="lead d-flex justify-content-center"><span class="border-title">Economize e fale à vontade!</span></p>
+        <h2 class="display-3 d-flex justify-content-center h2-home">Mobile Wooza</h2>
+        <p class="lead d-flex justify-content-center p-home"><span class="border-title">Economize e fale à vontade!</span></p>
         <div class="row row-card">
+            <p>{{platformmodel}}</p>
             <div class="col-sm-3 card-plan" ng-repeat="platform in platforms">
-                <div class="card">
+                <div class="card" id="home-card">
                 <div class="card-block" id="card-sign">
                     <a ng-class="platform.nome" ng-click="plansDetail(platform.nome)"></a>
                     <h3 class="card-title">{{platform.nome | capitalize}}</h3>

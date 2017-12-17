@@ -1,0 +1,16 @@
+.display-3.h2-home{
+    color: #efefef;
+    font-size: 110px;
+    font-weight: 400;
+}
+
+p.lead.p-home {
+    color: #efefef;
+    font-size: 26px;
+}
+
+.border-title {
+    display: inline-block;
+    border-left: 3px solid #0064ab;
+    padding-left: 20px;
+}

@@ -12,5 +12,15 @@ var app = angular.module('app', ['ngRoute'])
         controller: "MainController",
         reloadOnSearch: false
     })
+    .when("/register", {
+        templateUrl : "app/views/register.html",
+        controller: "MainController",
+        reloadOnSearch: false
+    })
+    .when("/registerSuccessfully", {
+        templateUrl : "app/views/register-successfully.html",
+        controller: "MainController",
+        reloadOnSearch: false
+    })
 
 });

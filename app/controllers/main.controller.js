@@ -1,25 +1,30 @@
-app.controller('MainController', function($scope, $location, MainService, $rootScope) {
+app.controller('MainController', function($scope, $location, MainService, $rootScope, PlatformModel) {
 
     $scope.platforms = [];
     $rootScope.plans = [];
+    $rootScope.planChoose;
 
     $scope.plansDetail = function(platform){
         MainService.getPlain(platform).then(function(response) {
-            _.each(response.planos, function(plan){
+            _.each(response.plans, function(plan){
                 $rootScope.plans.push(plan);
             })
         });
-
         $location.path("/plans/" + platform);
-    }; 
+    };
 
-    console.log($rootScope.plans);
-    
+    $scope.register = function(planChoose){
+        $rootScope.planChoose = planChoose;
+        $location.path("/register");
+    }
+
+    $scope.registerSuccessfully = function(){
+        $location.path("/registerSuccessfully");
+    }
+     
     $scope.init = function(){
         MainService.getPlatforms().then(function(response) {
-            _.each(response.plataformas, function(platform){
-                platform.descricao = platform.descricao.replace("|"," ").toLowerCase();
-                platform.nome = platform.nome.toLowerCase();
+            _.each(response.platformList, function(platform){
                 $scope.platforms.push(platform);
             })
         });

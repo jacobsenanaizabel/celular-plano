@@ -1,0 +1,36 @@
+<main role="main">
+        <div class="content">
+            <div class="row">
+                <div class="col md-6" style="background:red">
+                    <h2> Compre Agora! Nos te ligamos </h2>
+                    <form>
+                            <label><b>Nome</b></label>
+                            <input type="text" placeholder="Digite seu nome" name="nome" required> 
+
+                            <label><b>E-mail</b></label>
+                            <input type="text" placeholder="Digite seu e-mail" name="nome" required> 
+
+                            <label><b>Nascimento</b></label>
+                            <input type="text" placeholder="Digite sua data de nasciment" name="nome" required>
+
+                            <label><b>CPF</b></label>
+                            <input type="text" placeholder="Digite seu cpf" name="nome" required>
+
+                            <label><b>Telefone</b></label>
+                            <input type="text" placeholder="Digite seu telefone" name="nome" required>                 
+                            
+                            <a class="btn-plan" >Peça a ligação</a>
+                
+                    </form>
+                </div>
+                <div class="col md-5" style="background:blue">
+                    <h2> Resumo do pedido </h2>
+                    <hr>
+                    <ul>
+                        <li>Franquia {{planChoose.franquia}}</li>
+                        <li>No Valor de {{planChoose.valor}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</main>
