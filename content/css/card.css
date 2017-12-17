@@ -29,7 +29,7 @@
     text-align: center;
 }
 
-.Tablet{
+.tablet{
     background-image: url(../img/svg/text-lines-5.svg);
     display: block;
     background-repeat: no-repeat;
@@ -37,14 +37,14 @@
     margin-left: 20%;
 }
 
-.Computador{
+.computador{
     background-image: url(../img/svg/wifi-signal.svg);
     display: block;
     background-repeat: no-repeat;
     height: 150px;
     margin-left: 20%;
 }
-.WI-FI{
+.wi-fi{
     background-image: url(../img/svg/wifi-signal-4.svg);
     display: block;
     background-repeat: no-repeat;

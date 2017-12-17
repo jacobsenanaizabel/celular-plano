@@ -6,9 +6,9 @@
             <div class="col-sm-3 card-plan" ng-repeat="platform in platforms">
                 <div class="card">
                 <div class="card-block" id="card-sign">
-                    <a ng-class="platform.nome" ng-click="plansDetail('computador')"></a>
-                    <h3 class="card-title">{{platform.nome}}</h3>
-                    <p class="card-text">{{platform.descricao}}</p>
+                    <a ng-class="platform.nome" ng-click="plansDetail(platform.nome)"></a>
+                    <h3 class="card-title">{{platform.nome | capitalize}}</h3>
+                    <p class="card-text">{{platform.descricao | capitalize}}</p>
                 </div>
                 </div>
             </div>
