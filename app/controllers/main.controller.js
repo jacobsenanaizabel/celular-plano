@@ -1,4 +1,4 @@
-app.controller('MainController', function($scope, $location, MainService, $rootScope, PlatformModel) {
+app.controller('MainController', function($scope, $location, MainService, $rootScope, PlatformModel, $window) {
 
     $scope.platforms = [];
     $rootScope.plans = [];
@@ -18,8 +18,9 @@ app.controller('MainController', function($scope, $location, MainService, $rootS
         $location.path("/register");
     }
 
-    $scope.registerSuccessfully = function(){
-        $location.path("/registerSuccessfully");
+    $scope.saveRegister = function(){
+        $window.alert("Cadastro realizado com sucesso, entraremos em contato em breve!");
+        $location.path("/")
     }
      
     $scope.init = function(){
