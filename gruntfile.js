@@ -14,6 +14,14 @@ module.exports = function(grunt) {
             options: {},
             files:'<%= config.cont %>/css/*.css',
         },
+        htmllint: {
+            options: {
+                force: true
+            },
+            src: [
+                '<%= config.cont %>/views/*.html'
+            ],
+        },
         cssmin: {
             options: {
                 mergeIntoShorthands: false,
@@ -48,6 +56,7 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-htmllint');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-custom-csslint');
     grunt.loadNpmTasks('grunt-contrib-jshint'); 
@@ -56,7 +65,7 @@ module.exports = function(grunt) {
     
 
     grunt.registerTask('mini', ['cssmin']);
-    grunt.registerTask('build', ['jshint', 'custom_csslint']);
+    grunt.registerTask('build', ['jshint', 'custom_csslint','htmllint']);
     grunt.registerTask('alive', ['connect', 'watch']);
 
 };

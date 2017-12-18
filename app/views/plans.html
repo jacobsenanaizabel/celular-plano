@@ -1,18 +1,17 @@
 <main role="main">
         <div class="content">
                 <h1 class="display-4 d-flex justify-content-center header-plans">Escolha o plano que mais combina com você!</h1>
-                <p class="lead d-flex justify-content-center p-home"><span class="border-title">Planos a partir de 19,90</span></p>
+                <p class="lead d-flex justify-content-center p-home">
+                        <span class="border-title">Planos a partir de 19,90</span>
+                </p>
                 <ul>
                         <li class="item" ng-repeat="plan in plans" ng-click="register(plan)">
-                        <h2 class="title-plan">{{plan.franquia}}</h2>
-                        <div class="preco">
-                                <span class="apartir">a partir de</span>
-                                <span class="dez">{{plan.valor}}</span>
-                        </div>
-                        <div>
-
-                        </div>                        
-                        <a class="btn-plan">CONHEÇA OS PLANOS</a>
+                                <h2 class="title-plan">{{plan.franquia}}</h2>
+                                <div class="preco">
+                                        <span class="apartir">a partir de</span>
+                                        <span class="dez">{{plan.valor}}</span>
+                                </div>
+                                <a class="btn-plan button-plan">CONHEÇA OS PLANOS</a>
                         </li>
                 </ul>
         </div>

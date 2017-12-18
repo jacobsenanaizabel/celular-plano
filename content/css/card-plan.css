@@ -27,7 +27,8 @@
     font-size: 50px;
     display: block;
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: 15% 0 10% 0;
     font-family: NIISansLight, Arial;
 }
 
@@ -57,7 +58,7 @@
     display: block;
     text-align: center;
     color: #FFF;
-    margin: 53px 0 0;
+    /* margin: 53px 0 0; */
     font-size: 16px;
     background: #0064ab;
     -moz-box-shadow: 0px 3px #0064ab;
@@ -77,6 +78,7 @@ a.btn-plan{color:white}
     margin: 5%;
     padding-top: 1%;
     background-color: #FFF;
+    border-radius: 0 0 5px 5px;
 }
 
 .register-label{
@@ -95,4 +97,13 @@ a.btn-plan{color:white}
 
 #register{
     margin-top: 6%;
+    border-radius: 0 0 5px 5px;
+}
+
+.button-plan{
+    color: white;
+}
+
+#plan-choose-card{
+    background:#0064ab;
 }

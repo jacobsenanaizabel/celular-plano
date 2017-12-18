@@ -17,6 +17,7 @@
     -moz-transition: 1s all ease; /* Firefox */
     -o-transition: 1s all ease; /* Opera */
 }
+
 .card-plan{
     margin:auto;
 }
@@ -48,6 +49,7 @@
     margin-top: 10%;
     margin-bottom: 10%;
 }
+
 .wi-fi{
     background-image: url(../img/svg/wifi-signal-4.svg);
     display: block;

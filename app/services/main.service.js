@@ -25,9 +25,7 @@ app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
     };
 
     self.getPlain = function (platformChoose) {
-        
         switch(platformChoose){
-
             case 'computador':
                 return $http
                 .get(endpoints.computer)
@@ -54,6 +52,4 @@ app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
                 });
         }
     };
-
-
 });

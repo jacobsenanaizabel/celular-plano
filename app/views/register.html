@@ -1,37 +1,37 @@
 <main role="main">
-        <div class="content">
-            <div class="row">
-                <div class="col md-8" >
-                    <h1 class="display-5 d-flex justify-content-center header-plans"> Compre Agora! Nos te ligamos </h1>
-                    <form class="register-form" name="form-register">
-                            <label class="register-label">Nome</label>
-                            <input class="register-input" type="text" placeholder="Digite seu nome" name="name" required> 
+    <div class="content">
+        <div class="row">
+            <div class="col md-8">
+                <h1 class="display-5 d-flex justify-content-center header-plans"> Compre Agora! Nos te ligamos </h1>
+                <form class="register-form" name="form-register">
+                    <label class="register-label">Nome</label>
+                    <input class="register-input" type="text" placeholder="Digite seu nome" name="name" required>
 
-                            <label class="register-label">E-mail</label>
-                            <input class="register-input" type="text" placeholder="Digite seu e-mail" name="email" required> 
+                    <label class="register-label">E-mail</label>
+                    <input class="register-input" type="text" placeholder="Digite seu e-mail" name="email" required>
 
-                            <label class="register-label">Nascimento</label>
-                            <input class="register-input" type="text" placeholder="Digite sua data de nascimento" name="birthday" required>
-                            
+                    <label class="register-label">Nascimento</label>
+                    <input class="register-input" type="text" placeholder="Digite sua data de nascimento" name="birthday" required>
 
-                            <label class="register-label">CPF</label>
-                            <input class="register-input" type="text" placeholder="Digite seu CPF" name="cpf" required>
+                    <label class="register-label">CPF</label>
+                    <input class="register-input" type="text" placeholder="Digite seu CPF" name="cpf" required>
 
-                            <label class="register-label">Telefone</label>
-                            <input class="register-input" type="text" placeholder="Digite seu telefone" name="tel" required>                 
-                            
-                            <input type="submit" class="btn btn-primary btn-lg btn-block" id="register" ng-click="saveRegister()"></button>
-                
-                    </form>
-                </div>
-                <div class="col md-4" style="background:#0064ab">
-                    <h1 class="display-5 d-flex justify-content-center header-plans"> Resumo do pedido </h1>
-                    <hr>
-                    <ul class="plan-value">
-                        <li class="plan-value">Franquia de {{planChoose.franquia}}</li>
-                        <li class="plan-value">No Valor de <span id="planchoose-value">{{planChoose.valor}}</span></li>
-                    </ul>
-                </div>
+                    <label class="register-label">Telefone</label>
+                    <input class="register-input" type="text" placeholder="Digite seu telefone" name="tel" required>
+
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" id="register" ng-click="saveRegister()">
+                </form>
+            </div>
+            <div class="col md-4" id="plan-choose-card">
+                <h1 class="display-5 d-flex justify-content-center header-plans"> Resumo do pedido </h1>
+                <hr>
+                <ul class="plan-value">
+                    <li class="plan-value">Franquia de {{planChoose.franquia}}</li>
+                    <li class="plan-value">No Valor de
+                        <span id="planchoose-value">{{planChoose.valor}}</span>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 </main>
