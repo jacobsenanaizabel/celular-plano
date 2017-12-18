@@ -2,28 +2,41 @@
     <div class="content">
         <div class="row">
             <div class="col md-8">
-                <h1 class="display-5 d-flex justify-content-center medium-title font"> Compre Agora! Nos te ligamos </h1>
-                <form class="login-form" name="form-login">
-                    <label class="login-label">Nome</label>
-                    <input class="login-input" type="text" placeholder="Digite seu nome" name="name" required>
+                <h1 class="display-5 d-flex justify-content-center medium-title font"> Compre Agora! Nós Te Ligamos </h1>
 
-                    <label class="login-label">E-mail</label>
-                    <input class="login-input" type="text" placeholder="Digite seu e-mail" name="email" required>
+                <form class="login-form" name="formLogin" ng-submit="saveRegister()" novalidate>
 
-                    <label class="login-label">Nascimento</label>
-                    <input class="login-input" type="text" placeholder="Digite sua data de nascimento" name="birthday" required>
+                    <div ng-class="{ 'has-error' : formLogin.name.$invalid && !formLogin.name.$pristine }">
+                        <label class="login-label">Nome</label>
+                        <input class="login-input" type="text" placeholder="Digite seu nome" name="name" ng-model="login.name" required>
+                        <p ng-show="formLogin.name.$invalid && !formLogin.name.$pristine" class="help-block">Seu nome precisa ser preenchido.</p>
+                    </div>
 
-                    <label class="login-label">CPF</label>
-                    <input class="login-input" type="text" placeholder="Digite seu CPF" name="cpf" required>
-
-                    <label class="login-label">Telefone</label>
-                    <input class="login-input" type="text" placeholder="Digite seu telefone" name="tel" required>
-
-                    <input type="submit" class="btn btn-primary btn-lg btn-block login" ng-click="saveRegister()">
+                    <div ng-class="{ 'has-error' : formLogin.email.$invalid && !formLogin.email.$pristine }">
+                        <label class="login-label">E-mail</label>
+                        <input class="login-input" type="email" placeholder="Digite seu e-mail" name="email" ng-model="login.email" required>
+                        <p ng-show="formLogin.email.$invalid && !formLogin.email.$pristine" class="help-block">Seu e-mail precisa ser preenchido.</p>
+                    </div>
+                    <div ng-class="{ 'has-error' : formLogin.birthday.$invalid && !formLogin.birthday.$pristine }">
+                        <label class="login-label">Nascimento</label>
+                        <input class="login-input" type="text" placeholder="Digite sua data de nascimento" ng-model="login.birthday" name="birthday" required>
+                        <p ng-show="formLogin.birthday.$invalid && !formLogin.birthday.$pristine" class="help-block">Sua data de nascimento precisa ser preenchida.</p>
+                    </div>
+                    <div ng-class="{ 'has-error' : formLogin.cpf.$invalid && !formLogin.cpf.$pristine }">
+                        <label class="login-label">CPF</label>
+                        <input class="login-input" type="text" placeholder="Digite seu CPF" name="cpf" ng-model="login.cpf" required>
+                        <p ng-show="formLogin.cpf.$invalid && !formLogin.cpf.$pristine" class="help-block">Seu CPF precisa ser preenchido.</p>
+                    </div>
+                    <div ng-class="{ 'has-error' : formLogin.tel.$invalid && !formLogin.tel.$pristine }">
+                        <label class="login-label">Telefone</label> 
+                        <input class="login-input" type="text" placeholder="Digite seu telefone" name="tel" ng-model="login.tek" required>
+                        <p ng-show="formLogin.tel.$invalid && !formLogin.tel.$pristine" class="help-block">Seu telefone precisa ser preenchido.</p>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block login" ng-disabled="formLogin.$invalid">
                 </form>
             </div>
             <div class="col md-4 plan-choose-card">
-                <h1 class="display-5 d-flex justify-content-center medium-title font"> Resumo do pedido </h1>
+                <h1 class="display-5 d-flex justify-content-center medium-title font"> Resumo do Pedido </h1>
                 <hr>
                 <ul class="text-center">
                     <li class="text-center">Franquia de {{planChoose.franquia}}</li>

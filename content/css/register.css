@@ -28,7 +28,12 @@
     border-radius: 0 0 5px 5px;
 }
 
-
 .plan-choose-card{
     background:#0064ab;
+}
+
+p.help-block {
+    color: red;
+    margin-left: 2%;
+    font-weight: bold;
 }

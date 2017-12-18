@@ -15,12 +15,14 @@ app.controller('MainController', function($scope, $location, MainService, $rootS
 
     $scope.register = function(planChoose){
         $rootScope.planChoose = planChoose;
-        $location.path("/register");
+        $location.path("/register");    
     }
 
     $scope.saveRegister = function(){
-        $window.alert("Cadastro realizado com sucesso, entraremos em contato em breve!");
-        $location.path("/")
+        if($scope.formLogin.$valid){
+            $window.alert("Cadastro realizado com sucesso, entraremos em contato em breve!");
+            $location.path("/")
+        }
     }
      
     $scope.init = function(){
