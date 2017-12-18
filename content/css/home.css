@@ -1,11 +1,25 @@
-.display-3.h2-home{
+.font{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-white{
     color: #efefef;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cards-position{
+    margin:auto;
+}
+
+h2.big-title{
     font-size: 110px;
     font-weight: 400;
 }
 
-p.lead.p-home {
-    color: #efefef;
+p.p-home{
     font-size: 26px;
 }
 
@@ -14,3 +28,55 @@ p.lead.p-home {
     border-left: 3px solid #0064ab;
     padding-left: 20px;
 }
+
+.card.card-simple {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.card-block:hover{
+    background-color: #0064ab;
+    opacity: 0.8;  
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+.card-block{
+    border-radius: 25px;
+    -webkit-transition: 1s all ease; /* Chrome and Safira */
+    -moz-transition: 1s all ease; /* Firefox */
+    -o-transition: 1s all ease; /* Opera */
+}
+
+.tablet{
+    background-image: url(../img/svg/text-lines-5.svg);
+    display: block;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.computador{
+    background-image: url(../img/svg/wifi-signal.svg);
+    display: block;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.wi-fi{
+    background-image: url(../img/svg/wifi-signal-4.svg);
+    display: block;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+

@@ -1,28 +1,12 @@
-content/css/card-plan.css: line 2, col 5, Warning - Using width with border-right can sometimes make elements larger than you expect.
-content/css/card-plan.css: line 15, col 5, Warning - Missing standard property 'transform' to go along with '-moz-transform'.
-content/css/card-plan.css: line 15, col 5, Warning - The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well.
-content/css/card-plan.css: line 16, col 5, Warning - Missing standard property 'transform' to go along with '-webkit-transform'.
-content/css/card-plan.css: line 17, col 5, Warning - Missing standard property 'transform' to go along with '-o-transform'.
-content/css/card-plan.css: line 42, col 14, Warning - Element (span.apartir) is overqualified, just use .apartir without element name.
-content/css/card-plan.css: line 49, col 14, Warning - Element (span.dez) is overqualified, just use .dez without element name.
-content/css/card-plan.css: line 63, col 22, Warning - Values of 0 shouldn't have units specified.
-content/css/card-plan.css: line 64, col 25, Warning - Values of 0 shouldn't have units specified.
-content/css/card-plan.css: line 65, col 17, Warning - Values of 0 shouldn't have units specified.
-content/css/card-plan.css: line 69, col 1, Warning - Don't use IDs in selectors.
-content/css/card-plan.css: line 91, col 5, Warning - Using height with border can sometimes make elements larger than you expect.
-content/css/card-plan.css: line 91, col 5, Warning - Using width with border can sometimes make elements larger than you expect.
-content/css/card-plan.css: line 93, col 5, Warning - Using width with padding-left can sometimes make elements larger than you expect.
-content/css/card-plan.css: line 96, col 1, Warning - Don't use IDs in selectors.
-content/css/card.css: line 1, col 1, Warning - Don't use IDs in selectors.
-content/css/card.css: line 9, col 5, Warning - The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well.
-content/css/card.css: line 9, col 5, Warning - Missing standard property 'transform' to go along with '-moz-transform'.
-content/css/card.css: line 10, col 5, Warning - Missing standard property 'transform' to go along with '-webkit-transform'.
-content/css/card.css: line 11, col 5, Warning - Missing standard property 'transform' to go along with '-o-transform'.
-content/css/home.css: line 1, col 1, Warning - Don't use adjoining classes.
-content/css/home.css: line 7, col 1, Warning - Don't use adjoining classes.
-content/css/home.css: line 7, col 1, Warning - Element (p.lead.p-home) is overqualified, just use .lead without element name.
-content/css/home.css: line 7, col 1, Warning - Element (p.lead.p-home) is overqualified, just use .p-home without element name.
+content/css/home.css: line 17, col 1, Warning - Element (h2.big-title) is overqualified, just use .big-title without element name.
+content/css/home.css: line 22, col 1, Warning - Element (p.p-home) is overqualified, just use .p-home without element name.
+content/css/home.css: line 32, col 1, Warning - Don't use adjoining classes.
+content/css/home.css: line 40, col 5, Warning - The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well.
+content/css/plans.css: line 45, col 5, Warning - Using width with border-right can sometimes make elements larger than you expect.
+content/css/plans.css: line 58, col 5, Warning - The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well.
+content/css/register.css: line 21, col 5, Warning - Using height with border can sometimes make elements larger than you expect.
+content/css/register.css: line 21, col 5, Warning - Using width with border can sometimes make elements larger than you expect.
+content/css/register.css: line 23, col 5, Warning - Using width with padding-left can sometimes make elements larger than you expect.
 content/css/style.css: line 1, col 1, Warning - @import prevents parallel downloads, use <link> instead.
 content/css/style.css: line 2, col 1, Warning - @import prevents parallel downloads, use <link> instead.
 content/css/style.css: line 3, col 1, Warning - @import prevents parallel downloads, use <link> instead.
-content/css/style.css: line 7, col 5, Warning - Use of !important

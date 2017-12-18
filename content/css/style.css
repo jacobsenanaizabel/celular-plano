@@ -1,10 +1,9 @@
-@import url('card-plan.css');
-@import url('card.css');
 @import url('home.css');
+@import url('plans.css'); 
+@import url('register.css');
 
 body{
     background: linear-gradient(to bottom right, grey, white); 
-    font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 a{

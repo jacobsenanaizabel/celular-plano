@@ -1,17 +1,17 @@
 <main role="main" data-ng-init="init()">
     <div class="content">
-        <h2 class="display-3 d-flex justify-content-center h2-home">Mobile Wooza</h2>
-        <p class="lead d-flex justify-content-center p-home">
+        <h2 class="display-3 d-flex justify-content-center big-title font text-white">Mobile Wooza</h2>
+        <p class="lead d-flex justify-content-center p-title font text-white">
             <span class="border-title">Economize e fale à vontade!</span>
         </p>
         <div class="row row-card">
             <p>{{platformmodel}}</p>
-            <div class="col-md-3 col col-sm-3 card-plan" ng-repeat="platform in platforms">
-                <div class="card" id="home-card">
-                    <div class="card-block" id="card-sign">
+            <div class="col-md-3 col col-sm-3 cards-position font" ng-repeat="platform in platforms">
+                <div class="card card-simple">
+                    <div class="card-block">
                         <a ng-class="platform.nome" ng-click="plansDetail(platform.nome)"></a>
-                        <h3 class="card-title">{{platform.nome | capitalize}}</h3>
-                        <p class="card-text">{{platform.descricao | capitalize}}</p>
+                        <h3 class="text-center">{{platform.nome | capitalize}}</h3>
+                        <p class="text-center">{{platform.descricao | capitalize}}</p>
                     </div>
                 </div>
             </div>

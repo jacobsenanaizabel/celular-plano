@@ -64,7 +64,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     
 
-    grunt.registerTask('mini', ['cssmin']);
+    grunt.registerTask('min', ['cssmin']);
     grunt.registerTask('build', ['jshint', 'custom_csslint','htmllint']);
     grunt.registerTask('alive', ['connect', 'watch']);
 
