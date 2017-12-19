@@ -29,13 +29,20 @@
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jasmine": "^1.1.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-custom-csslint": "^0.1.0",
-    "grunt-htmllint": "^0.2.7"
+    "grunt-htmllint": "^0.2.7",
+    "jasmine": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "ng-mock": "^0.10.10"
   },
   "dependencies": {
     "angular": "^1.6.7",
+    "angular-mocks": "^1.6.7",
     "angular-route": "^1.6.7",
     "bootstrap": "^4.0.0-beta.2",
     "underscore": "^1.8.3"
