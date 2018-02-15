@@ -1,12 +1,12 @@
 app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
-    
+
     var self = this;
-    var defer = $q.defer(); 
+    var defer = $q.defer();
     var PLAIN_PATH = 'http://private-59658d-celulardireto2017.apiary-mock.com';
-    
+
     var endpoints = {
         platforms : PLAIN_PATH + "/plataformas",
-        tablet: PLAIN_PATH + "/planos/TBT01",        
+        tablet: PLAIN_PATH + "/planos/TBT01",
         computer:PLAIN_PATH + "/planos/CPT02",
         wifi: PLAIN_PATH + "/planos/WF03"
     };
@@ -19,8 +19,9 @@ app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
                 platform.nome = platform.nome.toLowerCase();
             })
             return new PlatformModel(response.data);
-        }, function(e) {
-            console.log(e, "can not get data.");
+        })
+        .catch(function(e){
+            console.error('error: ', e.status, e.statusText);
         });
     };
 
@@ -31,24 +32,28 @@ app.service('MainService', function($http,$q, $log, PlatformModel, PlanModel) {
                 .get(endpoints.computer)
                 .then(function(response) {
                     return new PlanModel(response.data);
-                }, function(e) {
-                    console.log(e, "can not get data.");
+                })
+                .catch(function(e){
+                    console.error('error: ', e.status, e.statusText);
                 });
             case 'tablet':
                 return $http
                 .get(endpoints.tablet)
                 .then(function(response) {
                     return new PlanModel(response.data);
-                }, function(e) {
-                    console.log(e, "can not get data.");
+                })
+                .catch(function(e){
+                    console.error('error: ', e.status, e.statusText);
+
                 });
             case 'wi-fi':
                 return $http
                 .get(endpoints.wifi)
                 .then(function(response) {
                     return new PlanModel(response.data);
-                }, function(e) {
-                    console.log(e, "can not get data.");
+                })
+                .catch(function(e){
+                    console.error('error: ', e.status, e.statusText);
                 });
         }
     };
